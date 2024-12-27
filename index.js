@@ -46,8 +46,15 @@ console.log(arraySaya)
 arraySaya.push ('nadine')
 console.log(arraySaya)
 
-if (arraySaya.includes('nadine')){
-    const posisi = arraySaya.indexOf('nadine')
+if (arraySaya.includes('Aya')){
+    const posisi = arraySaya.indexOf('Aya')
+    const before = posisi - 1
+    const after = posisi + 1
+    const posisiBefore = arraySaya[before]
+    const posisiAfter = arraySaya[after]
+
+    console.log(`posisi sebelum aya ${posisiBefore}`)
+    console.log(`posisi sesudah aya ${posisiAfter}`)
     console.log(`posisi Aya ada di index ke ${posisi}`)
 }
 else {
