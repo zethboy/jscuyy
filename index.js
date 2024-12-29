@@ -145,3 +145,13 @@
 //     console.log(kadal)
 // }
 //  yogi('hehehe', 'hihih', 'huhuhu')
+
+// function sum (a, b){
+//     console.log(a + b)
+// } function biasa
+
+// const sum2 = (a, b) => {
+//     console.log(a + b)
+// } == arrow function
+
+// sum(3, 5)
