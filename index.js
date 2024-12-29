@@ -155,3 +155,23 @@
 // } == arrow function
 
 // sum(3, 5)
+
+// function ling (phi, r){
+//     console.log(phi * r * r)
+// }
+// ling(3.14, 7)
+
+// function seg (a, t){
+//     console.log(1/2 * a * t)
+// }
+// seg(10, 8)
+
+// function pp (p, l){
+//     console.log(p * l)
+// }
+// pp(6, 4)
+
+// function jg (a, t){
+//     console.log(a * t )
+// }
+// jg(16, 10)
