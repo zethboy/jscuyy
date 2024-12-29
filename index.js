@@ -89,28 +89,28 @@
 // for (list in mergeArray) console.log(list) == urutan indeks
 // mergeArray.map((value, index) => console.log(index, value)) ututan buat liat dua duanya
 
-const data = [
-    {
-        name : 'Yogi',
-        position : "front end",
-        age : 35
-    },
-    {
-        name : 'Allea',
-        position : "back end",
-        age : 28
-    },
-    {
-        name : 'Ayaa',
-        position : "pacar",
-        age : 7
-    },
-    {
-        name : 'Respa',
-        position : "well",
-        age : 19
-    }
-]
+// const data = [
+//     {
+//         name : 'Yogi',
+//         position : "front end",
+//         age : 35
+//     },
+//     {
+//         name : 'Allea',
+//         position : "back end",
+//         age : 28
+//     },
+//     {
+//         name : 'Ayaa',
+//         position : "pacar",
+//         age : 7
+//     },
+//     {
+//         name : 'Respa',
+//         position : "well",
+//         age : 19
+//     }
+// ]
 // data.map((value, index) => {
 //     console.log(value.name)
 // }) == buat munculin nama doang
@@ -122,3 +122,26 @@ const data = [
 // data.filter((x) => x.age > 20).map((value) => console.log(value)) filter dari umur lebih 20
 
 // data.sort((a, b) => a.age - b.age).filter((x) => x.age > 20).map((value) => console.log(value)) == gabungan filter umur lebih dan urutan umur 
+
+// function
+
+// function yogi(){
+//     return 'Yogiiii'
+// }
+//  alert(yogi())
+
+// function yogi(woi){
+//     return woi
+// }
+//  alert(yogi('hehehe'))
+
+//  function yogi(woi){
+//     console.log(woi) 
+// }
+//  yogi('hehehe')
+
+// function yogi(woi, zebra, kadal){
+//     console.log(woi, zebra) 
+//     console.log(kadal)
+// }
+//  yogi('hehehe', 'hihih', 'huhuhu')
