@@ -175,3 +175,62 @@
 //     console.log(a * t )
 // }
 // jg(16, 10)
+
+
+// LOOPING
+// for (let i = 0; i < 6; i++){
+//   if(i % 2 == 0){
+//     console.log(i, 'adalah bilangan genap')
+//   }
+//   else{
+//     console.log(i, 'adlah bilangan ganjil')
+//   }
+// }
+// //  ataau bisa pake while
+// let i = 0
+// while(i < 6){
+//   if(i % 2 == 0){
+//     console.log(i, 'adalah bilangan genap')
+//   }
+//   else{
+//     console.log(i, 'adlah bilangan ganjil')
+//   }
+//   i++
+// }
+// // bisa juga pake do
+// let j = 0
+// do{
+//   if(j % 2 == 0){
+//     console.log(j, 'adalah bilangan genap')
+//   }
+//   else{
+//     console.log(j, 'adlah bilangan ganjil')
+//   }
+//   j++
+// }while(j<6)
+
+
+// TUGASSSS
+let total = 0
+const x = [3, 5, 12]
+for (let i = 0; i < x.length; i++){
+  console.log(x[i])
+  total += x[i]
+}console.log('total penjumlahan : ', total)
+
+let jumlah = 0
+let i = 0
+while(i<x.length){
+  console.log(x[i])
+  jumlah += x[i]
+  i++
+}console.log('total penjumlahan : ', jumlah)
+
+
+let hasil = 0
+let z = 0
+do{
+  console.log(x[z])
+  hasil += x[z]
+  z++
+}while(z<x.length)console.log('total penjumlahan : ', hasil)
