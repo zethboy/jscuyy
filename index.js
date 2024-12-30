@@ -235,7 +235,7 @@
 //   z++
 // }while(z<x.length)console.log('total penjumlahan : ', hasil)
 
-const klubBola = ['liverpool', 'chelsea', 'munyuk', 'city']
+// const klubBola = ['liverpool', 'chelsea', 'munyuk', 'city']
 // console.log(klubBola)
 
 // for(let klub of klubBola){
@@ -249,3 +249,41 @@ const klubBola = ['liverpool', 'chelsea', 'munyuk', 'city']
 // klubBola.map((klub, index) => {
 //   console.log(klub, index + 1) 
 // }) map juga samaa
+
+// asyncronous
+// function satu(){
+//   console.log('satu')
+// }
+// function dua(){
+//   setTimeout(()=>{
+//     console.log('dua')
+//   }, 3000)
+  
+// }
+// function tiga(){
+//   console.log('tiga')
+// }
+// satu()
+// dua()
+// tiga()
+
+// misal fitur login
+
+const token = ~~[Math.random() * 12345678]
+const picture = ['1.jpg', '2.jpg', '3.jpg']
+
+function login(username){
+  return(token, username)
+}
+function getUsser(token){
+  if(token) return{apiKey : "xkey1234"}
+}
+function getPicture(apiKey) {
+  if(apiKey) return picture
+}
+const user = login("Yogi Nugraha")
+console.log(user, token)
+const apiKey = getUsser(user, token)
+console.log(apiKey)
+const getUserPicture = getPicture(apiKey)
+console.log(getUserPicture)
