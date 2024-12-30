@@ -211,26 +211,41 @@
 
 
 // TUGASSSS
-let total = 0
-const x = [3, 5, 12]
-for (let i = 0; i < x.length; i++){
-  console.log(x[i])
-  total += x[i]
-}console.log('total penjumlahan : ', total)
+// let total = 0
+// const x = [3, 5, 12]
+// for (let i = 0; i < x.length; i++){
+//   console.log(x[i])
+//   total += x[i]
+// }console.log('total penjumlahan : ', total)
 
-let jumlah = 0
-let i = 0
-while(i<x.length){
-  console.log(x[i])
-  jumlah += x[i]
-  i++
-}console.log('total penjumlahan : ', jumlah)
+// let jumlah = 0
+// let i = 0
+// while(i<x.length){
+//   console.log(x[i])
+//   jumlah += x[i]
+//   i++
+// }console.log('total penjumlahan : ', jumlah)
 
 
-let hasil = 0
-let z = 0
-do{
-  console.log(x[z])
-  hasil += x[z]
-  z++
-}while(z<x.length)console.log('total penjumlahan : ', hasil)
+// let hasil = 0
+// let z = 0
+// do{
+//   console.log(x[z])
+//   hasil += x[z]
+//   z++
+// }while(z<x.length)console.log('total penjumlahan : ', hasil)
+
+const klubBola = ['liverpool', 'chelsea', 'munyuk', 'city']
+// console.log(klubBola)
+
+// for(let klub of klubBola){
+//   console.log(klub)
+// } in untuk index
+
+// klubBola.forEach((klub, index)=>{
+//   console.log(klub, index)
+// }) ini untuk dapetin array + indexnya 
+
+// klubBola.map((klub, index) => {
+//   console.log(klub, index + 1) 
+// }) map juga samaa
