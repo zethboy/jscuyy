@@ -269,21 +269,46 @@
 
 // misal fitur login
 
-const token = ~~[Math.random() * 12345678]
-const picture = ['1.jpg', '2.jpg', '3.jpg']
+// const token = ~~[Math.random() * 12345678]
+// const picture = ['1.jpg', '2.jpg', '3.jpg']
 
-function login(username){
-  return(token, username)
-}
-function getUsser(token){
-  if(token) return{apiKey : "xkey1234"}
-}
-function getPicture(apiKey) {
-  if(apiKey) return picture
-}
-const user = login("Yogi Nugraha")
-console.log(user, token)
-const apiKey = getUsser(user, token)
-console.log(apiKey)
-const getUserPicture = getPicture(apiKey)
-console.log(getUserPicture)
+// function login(username){
+//   return(token, username)
+// }
+// function getUsser(token){
+//   if(token) return{apiKey : "xkey1234"}
+// }
+// function getPicture(apiKey) {
+//   if(apiKey) return picture
+// }
+// const user = login("Yogi Nugraha")
+// console.log(user, token)
+// const apiKey = getUsser(user, token)
+// console.log(apiKey)
+// const getUserPicture = getPicture(apiKey)
+// console.log(getUserPicture)
+
+// const firstInput= Number(prompt('Silahkan masukkan angka pertama :'))
+// const secondInput= Number(prompt('Silahkan masukkan angka ke dua :'))
+// const whatsNeed = Number(prompt("Apa yang ingin anda lakukan\n 1. Penjumlahan\n 2. Pengurangan\n 3.Perkalian\n 4. Pembagian\n *Masukkan kode angka"))
+// switch (whatsNeed){
+//   case 1:
+//     const penjumlahan = firstInput + secondInput
+//     alert(`Hasil penjumlahan dari ${firstInput} ditambah ${secondInput} adalah = ${penjumlahan}`)
+//     break
+//   case 2:
+//     const pengurangan = firstInput - secondInput
+//     alert(`Hasil pengurangan dari ${firstInput} dikurangi ${secondInput} adalah = ${pengurangan}`)
+//     break
+//     case 3:
+//     const perkalian = firstInput * secondInput
+//     alert(`Hasil perkalian dari ${firstInput} dikali ${secondInput} adalah = ${perkalian}`)
+//     break
+//     case 4:
+//     const pembagiann = firstInput / secondInput
+//     alert(`Hasil pembagian dari ${firstInput} dibagi ${secondInput} adalah = ${pembagiann}`)
+//     break
+//     default:
+//     alert(`Tolong masukkan kode yang sudah tertera!`)
+    
+//     }
