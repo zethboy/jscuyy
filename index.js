@@ -312,3 +312,19 @@
 //     alert(`Tolong masukkan kode yang sudah tertera!`)
     
 //     }
+
+const angka = Number(prompt('Masukkan angka :'))
+if(isNaN(angka)){
+  alert(`Masukkan angka yang benar !`)
+} 
+else {
+  if (angka % 2 == 0){
+    alert(`Angka ${angka} adalah genap`)
+  }
+  if(angka % 2 != 0){
+    alert(`Angka ${angka} adalah ganjil`)
+  }
+}
+
+
+
