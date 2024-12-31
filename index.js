@@ -326,28 +326,55 @@
 //   }
 // }
 
-const random = Math.floor(Math.random() * 10) + 1
-console.log(random)
-const tebak = Number(prompt('Tebak angka dari 1 - 10'))
-if(isNaN(tebak)){
-  alert(`Masukkan angka!`)
-}
-else{
-  if(tebak == random){
-    alert(`Selamat ! Tebakanmu benar.`)
+// const random = Math.floor(Math.random() * 10) + 1
+// console.log(random)
+// const tebak = Number(prompt('Tebak angka dari 1 - 10'))
+// if(isNaN(tebak)){
+//   alert(`Masukkan angka!`)
+// }
+// else{
+//   if(tebak == random){
+//     alert(`Selamat ! Tebakanmu benar.`)
+//   }
+//   if(tebak > 10 | tebak < 1){
+//     alert(`Masukkan angka dari 1 - 10`)
+//   }
+//   else{
+//     if(tebak < random){
+//       alert(`Tebakan terlalu kecil`)
+//     }
+//     if(tebak > random){
+//       alert(`Tebakan terlalu besar`)
+//     }
+//   }
+// }
+
+const random = Math.floor(Math.random()*10) + 1
+let tebak =0
+let jumTebak = 0
+while(true){
+  const tebak = Number(prompt(`Masukkan angka tebakan 1 -10 : `))
+  jumTebak ++
+  if (isNaN(tebak)){
+    alert(`Masukkan angka !`)
+    continue
   }
-  if(tebak > 10 | tebak < 1){
+  if(tebak < 1 || tebak > 10){
     alert(`Masukkan angka dari 1 - 10`)
+    continue
+  }
+  if(tebak == random){
+    alert(`Selamat tebakanmu benar !`)
+    break
+  }
+  if(tebak > random){
+    alert(`Tebakkan terlalu besar`)
   }
   else{
-    if(tebak < random){
-      alert(`Tebakan terlalu kecil`)
-    }
-    if(tebak > random){
-      alert(`Tebakan terlalu besar`)
-    }
+    alert(`Tebakkan terlalu kecil`)
   }
 }
+alert(`Jumlah percobaan : ${jumTebak}`)
 
 
 
