@@ -326,5 +326,29 @@
 //   }
 // }
 
+const random = Math.floor(Math.random() * 10) + 1
+console.log(random)
+const tebak = Number(prompt('Tebak angka dari 1 - 10'))
+if(isNaN(tebak)){
+  alert(`Masukkan angka!`)
+}
+else{
+  if(tebak == random){
+    alert(`Selamat ! Tebakanmu benar.`)
+  }
+  if(tebak > 10 | tebak < 1){
+    alert(`Masukkan angka dari 1 - 10`)
+  }
+  else{
+    if(tebak < random){
+      alert(`Tebakan terlalu kecil`)
+    }
+    if(tebak > random){
+      alert(`Tebakan terlalu besar`)
+    }
+  }
+}
+
+
 
 
