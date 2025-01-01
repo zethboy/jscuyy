@@ -461,13 +461,40 @@ console.log(filterEvenNumbers([1, 2, 3, 4, 5]))
 
 // 4. Buat sebuah fungsi bernama capitalizeWords yang menerima sebuah string yang berisi beberapa kata, dan mengembalikan string di mana huruf pertama dari setiap kata diubah menjadi huruf kapital.
 function capitalizeWords (sentence){
-  let words = sentence.split("")
+  let words = sentence.split(" ")
   let capitalizeWords = words.map(word => {
     return word[0].toUpperCase() + word.slice(1)
   })
-  return capitalizeWords.join("")
+  return capitalizeWords.join(" ")
 }
 console.log(capitalizeWords("halo dunia"))
+
+// 5. Buat sebuah fungsi bernama countCharacterFrequency yang menerima sebuah string dan mengembalikan sebuah objek yang menunjukkan jumlah kemunculan setiap huruf dalam string tersebut. Abaikan spasi.
+
+function countCharacterFrequency(str) {
+  // Hilangkan spasi dan ubah string menjadi huruf kecil
+  let cleanedString = str.replace(/\s+/g, "").toLowerCase();
+  
+  // Objek untuk menyimpan hasil frekuensi
+  let frequency = {};
+  
+  // Iterasi setiap huruf dalam string
+  for (let char of cleanedString) {
+    if (frequency[char]) {
+      frequency[char] += 1; // Tambahkan jika huruf sudah ada
+    } else {
+      frequency[char] = 1; // Inisialisasi jika huruf belum ada
+    }
+  }
+  
+  return frequency; // Kembalikan objek frekuensi
+}
+
+console.log(countCharacterFrequency("hello world")); 
+// Output: { h: 1, e: 1, l: 3, o: 2, w: 1, r: 1, d: 1 }
+
+console.log(countCharacterFrequency("javascript is awesome"));
+// Output: { j: 1, a: 3, v: 1, s: 3, c: 1, r: 1, i: 2, t: 1, e: 2, w: 1, o: 1, m: 1 }
 
 
 
