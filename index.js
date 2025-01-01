@@ -349,32 +349,77 @@
 //   }
 // }
 
-const random = Math.floor(Math.random()*10) + 1
-let tebak =0
-let jumTebak = 0
-while(true){
-  const tebak = Number(prompt(`Masukkan angka tebakan 1 -10 : `))
-  jumTebak ++
-  if (isNaN(tebak)){
-    alert(`Masukkan angka !`)
-    continue
-  }
-  if(tebak < 1 || tebak > 10){
-    alert(`Masukkan angka dari 1 - 10`)
-    continue
-  }
-  if(tebak == random){
-    alert(`Selamat tebakanmu benar !`)
-    break
-  }
-  if(tebak > random){
-    alert(`Tebakkan terlalu besar`)
-  }
-  else{
-    alert(`Tebakkan terlalu kecil`)
+// const random = Math.floor(Math.random()*10) + 1
+// let tebak =0
+// let jumTebak = 0
+// while(true){
+//   const tebak = Number(prompt(`Masukkan angka tebakan 1 -10 : `))
+//   jumTebak ++
+//   if (isNaN(tebak)){
+//     alert(`Masukkan angka !`)
+//     continue
+//   }
+//   if(tebak < 1 || tebak > 10){
+//     alert(`Masukkan angka dari 1 - 10`)
+//     continue
+//   }
+//   if(tebak == random){
+//     alert(`Selamat tebakanmu benar !`)
+//     break
+//   }
+//   if(tebak > random){
+//     alert(`Tebakkan terlalu besar`)
+//   }
+//   else{
+//     alert(`Tebakkan terlalu kecil`)
+//   }
+// }
+// alert(`Jumlah percobaan : ${jumTebak}`)
+
+// ===== 1D1C 1/1/25 =====
+// 1. Buat sebuah fungsi bernama printNumbers yang menerima satu parameter n. Fungsi ini akan mencetak angka dari 1 sampai n ke konsol.
+
+function printNumbers (n){
+  for (let i = 1; i <= n; i++){
+    console.log(i)
   }
 }
-alert(`Jumlah percobaan : ${jumTebak}`)
+printNumbers(5)
+
+// 2. Buat sebuah fungsi bernama reverseString yang menerima sebuah string dan mengembalikannya dalam urutan terbalik.
+
+function reverseString(word){
+  console.log(word.split('').reverse().join(''))
+}
+reverseString('hello')
+
+// 3. Buat sebuah fungsi bernama sumArray yang menerima sebuah array angka dan mengembalikan jumlah total elemen di dalam array.
+
+let jumlah = 0
+function sumArray(angka){
+  for(let i = 0; i < angka.length; i++)
+  jumlah += angka[i]
+  console.log(jumlah)
+}
+sumArray([1,2,3,4,5])
+
+// 4. Buat sebuah fungsi bernama isEven yang menerima satu parameter angka dan mengembalikan true jika angka tersebut genap, atau false jika ganjil.
+
+function isEven(n){
+  if(n % 2 == 0){
+    console.log(true)
+  }
+  else{
+    console.log(false)
+  }
+}
+isEven(4)
+isEven(7)
+
+// 5. Gunakan prompt untuk meminta pengguna memasukkan nama mereka, lalu gunakan alert untuk menyapa mereka dengan nama tersebut
+
+const nama = prompt('Masukkan nama :')
+alert(`Hello, ${nama}`)
 
 
 
