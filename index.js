@@ -377,50 +377,100 @@
 // alert(`Jumlah percobaan : ${jumTebak}`)
 
 // ===== 1D1C 1/1/25 =====
+
 // 1. Buat sebuah fungsi bernama printNumbers yang menerima satu parameter n. Fungsi ini akan mencetak angka dari 1 sampai n ke konsol.
 
-function printNumbers (n){
-  for (let i = 1; i <= n; i++){
-    console.log(i)
+// function printNumbers (n){
+//   for (let i = 1; i <= n; i++){
+//     console.log(i)
+//   }
+// }
+// printNumbers(5)
+
+// // 2. Buat sebuah fungsi bernama reverseString yang menerima sebuah string dan mengembalikannya dalam urutan terbalik.
+
+// function reverseString(word){
+//   console.log(word.split('').reverse().join(''))
+// }
+// reverseString('hello')
+
+// // 3. Buat sebuah fungsi bernama sumArray yang menerima sebuah array angka dan mengembalikan jumlah total elemen di dalam array.
+
+// let jumlah = 0
+// function sumArray(angka){
+//   for(let i = 0; i < angka.length; i++)
+//   jumlah += angka[i]
+//   console.log(jumlah)
+// }
+// sumArray([1,2,3,4,5])
+
+// // 4. Buat sebuah fungsi bernama isEven yang menerima satu parameter angka dan mengembalikan true jika angka tersebut genap, atau false jika ganjil.
+
+// function isEven(n){
+//   if(n % 2 == 0){
+//     console.log(true)
+//   }
+//   else{
+//     console.log(false)
+//   }
+// }
+// isEven(4)
+// isEven(7)
+
+// // 5. Gunakan prompt untuk meminta pengguna memasukkan nama mereka, lalu gunakan alert untuk menyapa mereka dengan nama tersebut
+
+// const nama = prompt('Masukkan nama :')
+// alert(`Hello, ${nama}`)
+
+// 1. Buat sebuah fungsi bernama findFactors yang menerima satu angka positif dan mengembalikan array dari semua faktor bilangan tersebut.
+
+function findFactors(n){
+ let faktor = []
+ for (let i = 1; i <= n; i++ ){
+  if (n % i == 0){
+    faktor.push(i)
+  } 
+ }
+ return(faktor)
+}
+console.log(findFactors(12))
+
+// 2. Buat sebuah fungsi bernama isPalindrome yang menerima sebuah string dan mengembalikan true jika string tersebut adalah palindrome (dibaca sama dari depan dan belakang), atau false jika tidak.
+
+
+function isPalindrome (word){
+  const katabalik = word.split('').reverse().join('') 
+  return word == katabalik
+
   }
-}
-printNumbers(5)
 
-// 2. Buat sebuah fungsi bernama reverseString yang menerima sebuah string dan mengembalikannya dalam urutan terbalik.
+  console.log(isPalindrome("katak"))
 
-function reverseString(word){
-  console.log(word.split('').reverse().join(''))
-}
-reverseString('hello')
+// 3. Buat sebuah fungsi bernama filterEvenNumbers yang menerima sebuah array angka, dan mengembalikan array baru yang hanya berisi angka genap dari array tersebut.
 
-// 3. Buat sebuah fungsi bernama sumArray yang menerima sebuah array angka dan mengembalikan jumlah total elemen di dalam array.
-
-let jumlah = 0
-function sumArray(angka){
-  for(let i = 0; i < angka.length; i++)
-  jumlah += angka[i]
-  console.log(jumlah)
-}
-sumArray([1,2,3,4,5])
-
-// 4. Buat sebuah fungsi bernama isEven yang menerima satu parameter angka dan mengembalikan true jika angka tersebut genap, atau false jika ganjil.
-
-function isEven(n){
-  if(n % 2 == 0){
-    console.log(true)
+function filterEvenNumbers(angka){
+  let genap = []
+  for (let i = 0; i < angka.length; i++){
+    if(angka[i] % 2 == 0){
+      genap.push(angka[i])
+    }
   }
-  else{
-    console.log(false)
-  }
+  return genap
 }
-isEven(4)
-isEven(7)
+console.log(filterEvenNumbers([1, 2, 3, 4, 5]))
 
-// 5. Gunakan prompt untuk meminta pengguna memasukkan nama mereka, lalu gunakan alert untuk menyapa mereka dengan nama tersebut
+// 4. Buat sebuah fungsi bernama capitalizeWords yang menerima sebuah string yang berisi beberapa kata, dan mengembalikan string di mana huruf pertama dari setiap kata diubah menjadi huruf kapital.
+function capitalizeWords (sentence){
+  let words = sentence.split("")
+  let capitalizeWords = words.map(word => {
+    return word[0].toUpperCase() + word.slice(1)
+  })
+  return capitalizeWords.join("")
+}
+console.log(capitalizeWords("halo dunia"))
 
-const nama = prompt('Masukkan nama :')
-alert(`Hello, ${nama}`)
 
 
+  
 
 
