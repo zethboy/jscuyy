@@ -497,18 +497,6 @@
 // // Output: { j: 1, a: 3, v: 1, s: 3, c: 1, r: 1, i: 2, t: 1, e: 2, w: 1, o: 1, m: 1 }
 
 const angka = Array.from({length: 50}, (_, i) => i + i)
-if (angka % 3 == 0){
-  console.log('Fizz')
-}
-if(angka % 5 == 0){
-  console.log('Buzz')
-}
-if(angka % 3 == 0 && angka % 5 ==0){
-  console.log('FizzBuzz')
-}
-else {
-  console.log("gamungkin")
-}
 
   
 
