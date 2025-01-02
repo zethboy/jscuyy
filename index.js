@@ -496,8 +496,16 @@
 // console.log(countCharacterFrequency("javascript is awesome"));
 // // Output: { j: 1, a: 3, v: 1, s: 3, c: 1, r: 1, i: 2, t: 1, e: 2, w: 1, o: 1, m: 1 }
 
-const angka = Array.from({length: 50}, (_, i) => i + i)
-
+// menghitung luas segitiga
+const alas = Number(prompt('Masukkan alas :'))
+const tinggi = Number(prompt('Masukkan tinggi :'))
+const hasil = 1/2 * alas * tinggi 
+if(isNaN(alas) | isNaN(tinggi)){
+  alert(`Haraf Masukkan angka`)
+}
+else{
+  alert(`Luas segitiga adalah : ${hasil}`)
+}
   
 
 
