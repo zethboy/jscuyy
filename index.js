@@ -508,20 +508,28 @@
 // }
 
 // reverse word
-function reverseString(word){
+// function reverseString(word){
   
-  const hasil = word.split('').reverse().join('')
-  console.log(hasil)
-}
-reverseString('yogi')
+//   const hasil = word.split('').reverse().join('')
+//   console.log(hasil)
+// }
+// reverseString('yogi')
 
-function isPrima(number){
+// function isPrima(number){
   
-  if(number % 2 == 0 || number != 2){
-    console.log(`bilangan ${number} bukan bilangan prima`)
-  }
-  else{
-    console.log(`bilangan ${number} adalah bilangan prima`)
+//   if(number % 2 == 0 || number != 2){
+//     console.log(`bilangan ${number} bukan bilangan prima`)
+//   }
+//   else{
+//     console.log(`bilangan ${number} adalah bilangan prima`)
+//   }
+// }
+// isPrima(2)
+
+// ganjil number
+const numbers = Array.from({length : 100}, (_, index) => index + 1)
+for (let i = 1; i <= 100; i++){
+  if(i % 2 != 0){
+    console.log(i)
   }
 }
-isPrima(2)
