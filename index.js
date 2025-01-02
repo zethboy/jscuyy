@@ -535,27 +535,40 @@
 // }
 
 // operasi penghitungan
-const input1 = Number(prompt('Masukkan angka peratama :'))
-const input2 = Number(prompt('Masukkan angka kedua :'))
-const input3 = Number(prompt('Apa yang ingin anda lakukan :\n 1. penjumlahan\n 2. pengurangan\n 3. perkalian\n 4. pembagian'))
-let hasil = []
-switch(input3){
-  case 1 :
-     hasil = input1 + input2
-    alert(`Hasil penjumlahan = ${hasil}`)
-    break
-  case 2 :
-    hasil = input1 - input2
-    alert(`Hasil pengurangan = ${hasil}`)
-    break
-  case 3 :
-    hasil = input1 * input2
-    alert(`Hasil perkalian = ${hasil}`)
-    break
-  case 4 :
-    hasil = input1 / input2
-    alert(`Hasil pembagian = ${hasil}`)
-    break
+// const input1 = Number(prompt('Masukkan angka peratama :'))
+// const input2 = Number(prompt('Masukkan angka kedua :'))
+// const input3 = Number(prompt('Apa yang ingin anda lakukan :\n 1. penjumlahan\n 2. pengurangan\n 3. perkalian\n 4. pembagian'))
+// let hasil = []
+// switch(input3){
+//   case 1 :
+//      hasil = input1 + input2
+//     alert(`Hasil penjumlahan = ${hasil}`)
+//     break
+//   case 2 :
+//     hasil = input1 - input2
+//     alert(`Hasil pengurangan = ${hasil}`)
+//     break
+//   case 3 :
+//     hasil = input1 * input2
+//     alert(`Hasil perkalian = ${hasil}`)
+//     break
+//   case 4 :
+//     hasil = input1 / input2
+//     alert(`Hasil pembagian = ${hasil}`)
+//     break
+// }
+
+// perbandingan detik ke jam dan menit
+
+function convertTime (second){
+const jam = Math.floor(second / 3600)
+const sisaWaktu = second % 3600
+const menit = Math.floor(sisaWaktu / 60)
+const detik = sisaWaktu % 60
+return `${jam}:${menit}:${detik}`
 }
+console.log(convertTime(3661))
+console.log(convertTime(7261))
+console.log(convertTime(7324))
 
 
