@@ -515,3 +515,13 @@ function reverseString(word){
 }
 reverseString('yogi')
 
+function isPrima(number){
+  
+  if(number % 2 == 0 || number != 2){
+    console.log(`bilangan ${number} bukan bilangan prima`)
+  }
+  else{
+    console.log(`bilangan ${number} adalah bilangan prima`)
+  }
+}
+isPrima(2)
