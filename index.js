@@ -527,9 +527,35 @@
 // isPrima(2)
 
 // ganjil number
-const numbers = Array.from({length : 100}, (_, index) => index + 1)
-for (let i = 1; i <= 100; i++){
-  if(i % 2 != 0){
-    console.log(i)
-  }
+// const numbers = Array.from({length : 100}, (_, index) => index + 1)
+// for (let i = 1; i <= 100; i++){
+//   if(i % 2 != 0){
+//     console.log(i)
+//   }
+// }
+
+// operasi penghitungan
+const input1 = Number(prompt('Masukkan angka peratama :'))
+const input2 = Number(prompt('Masukkan angka kedua :'))
+const input3 = Number(prompt('Apa yang ingin anda lakukan :\n 1. penjumlahan\n 2. pengurangan\n 3. perkalian\n 4. pembagian'))
+let hasil = []
+switch(input3){
+  case 1 :
+     hasil = input1 + input2
+    alert(`Hasil penjumlahan = ${hasil}`)
+    break
+  case 2 :
+    hasil = input1 - input2
+    alert(`Hasil pengurangan = ${hasil}`)
+    break
+  case 3 :
+    hasil = input1 * input2
+    alert(`Hasil perkalian = ${hasil}`)
+    break
+  case 4 :
+    hasil = input1 / input2
+    alert(`Hasil pembagian = ${hasil}`)
+    break
 }
+
+
