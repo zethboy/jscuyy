@@ -571,19 +571,21 @@
 // console.log(convertTime(7261))
 // console.log(convertTime(7324))
 
-function findMaxMin(){
-  let numbers = []
-  for (let i = 0; i < 5; i++){
-    let input = parseInt(prompt(`Masukkan angka ke -${i + 1}`))
-    numbers.push(input)
-  }
-  const maxNumber = Math.max(...numbers)
-  const minNumber = Math.min(...numbers)
+// memfilter  bilangan terbesar dan terkecil
 
-  console.log(`Angka terbesar adalah ${maxNumber}`)
-  console.log(`Angka terkecil adalah ${minNumber}`)
-}
+// function findMaxMin(){
+//   let numbers = []
+//   for (let i = 0; i < 5; i++){
+//     let input = parseInt(prompt(`Masukkan angka ke -${i + 1}`))
+//     numbers.push(input)
+//   }
+//   const maxNumber = Math.max(...numbers)
+//   const minNumber = Math.min(...numbers)
 
-findMaxMin()
+//   console.log(`Angka terbesar adalah ${maxNumber}`)
+//   console.log(`Angka terkecil adalah ${minNumber}`)
+// }
+
+// findMaxMin()
 
 
