@@ -573,19 +573,19 @@
 
 // memfilter  bilangan terbesar dan terkecil
 
-// function findMaxMin(){
-//   let numbers = []
-//   for (let i = 0; i < 5; i++){
-//     let input = parseInt(prompt(`Masukkan angka ke -${i + 1}`))
-//     numbers.push(input)
-//   }
-//   const maxNumber = Math.max(...numbers)
-//   const minNumber = Math.min(...numbers)
+function findMaxMin(){
+  let numbers = []
+  for (let i = 0; i < 5; i++){
+    let input = parseInt(prompt(`Masukkan angka ke -${i + 1}`))
+    numbers.push(input)
+  }
+  const maxNumber = Math.max(...numbers)
+  const minNumber = Math.min(...numbers)
 
-//   console.log(`Angka terbesar adalah ${maxNumber}`)
-//   console.log(`Angka terkecil adalah ${minNumber}`)
-// }
+  console.log(`Angka terbesar adalah ${maxNumber}`)
+  console.log(`Angka terkecil adalah ${minNumber}`)
+}
 
-// findMaxMin()
+findMaxMin()
 
 
