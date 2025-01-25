@@ -4,3 +4,5 @@ const headerContent = document.createTextNode('Belajar DOM bosss')
 
 header.appendChild(headerContent)
 app.appendChild(header)
+
+header.style.color = 'red'
