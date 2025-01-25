@@ -10,3 +10,7 @@ header.style.backgroundColor = 'grey'
 
 header.style.textAlign = 'center'
 header.innerHTML = 'YOGI NUGRAHA'
+
+
+const p = document.getElementsByTagName('p')
+p[2].style.backgroundColor = 'gray'
