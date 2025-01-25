@@ -6,3 +6,6 @@ header.appendChild(headerContent)
 app.appendChild(header)
 
 header.style.color = 'red'
+header.style.backgroundColor = 'grey'
+
+header.style.textAlign = 'center'
