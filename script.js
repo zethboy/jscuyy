@@ -9,3 +9,4 @@ header.style.color = 'red'
 header.style.backgroundColor = 'grey'
 
 header.style.textAlign = 'center'
+header.innerHTML = 'YOGI NUGRAHA'
