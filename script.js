@@ -13,4 +13,6 @@ header.innerHTML = 'YOGI NUGRAHA'
 
 
 const p = document.getElementsByTagName('p')
-p[2].style.backgroundColor = 'gray'
+for (let i = 0; i < p.length; i++){
+  p[i].style.backgroundColor = 'yellow'
+}
