@@ -1,0 +1,6 @@
+#r p{
+  background-color : red
+}
+#r li:nth-child(2) {
+  background-color : pink
+}
