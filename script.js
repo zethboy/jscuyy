@@ -14,7 +14,9 @@ header.innerHTML = 'YOGI NUGRAHA'
 header.style.fontSize = '60px'
 
 const p = document.getElementsByTagName('p')
-for (let i = 0; i < p.length; i++){
+for (let i = 0; i < 4; i++){
   p[i].style.backgroundColor = 'yellow'
 }
 
+const parag = document.querySelector('#parag')
+parag.style.color = 'blue'
