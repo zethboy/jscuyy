@@ -25,4 +25,4 @@ const judul = document.querySelector('#judul')
 judul.innerHTML = '<em>Yomannn</em>'
 
 const sec = document.querySelector('#r')
-// sec.innerHTML = 'hello bro'
+sec.innerHTML = '<div><ul><li>yogi</li><li>nugraha</li><li>alcantara</li></ul></div>'
