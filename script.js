@@ -23,6 +23,10 @@ parag.style.color = 'blue'
 
 const judul = document.querySelector('#judul')
 judul.innerHTML = '<em>Yomannn</em>'
+judul.style.backgroundColor = 'Orange'
+judul.style.fontSize = '60px'
+judul.style.textAlign = 'center'
+
 
 const sec = document.querySelector('#r')
 sec.innerHTML = '<div><ul><li>yogi</li><li>nugraha</li><li>alcantara</li></ul></div>'
