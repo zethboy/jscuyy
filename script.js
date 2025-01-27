@@ -26,6 +26,7 @@ judul.innerHTML = '<em>Yomannn</em>'
 judul.style.backgroundColor = 'Orange'
 judul.style.fontSize = '60px'
 judul.style.textAlign = 'center'
+judul.setAttribute('name', 'judul')
 
 
 const sec = document.querySelector('#r')
