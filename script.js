@@ -20,3 +20,9 @@ for (let i = 0; i < 4; i++){
 
 const parag = document.querySelector('#parag')
 parag.style.color = 'blue'
+
+const judul = document.querySelector('#judul')
+judul.innerHTML = '<em>Yomannn</em>'
+
+const sec = document.querySelector('#r')
+// sec.innerHTML = 'hello bro'
