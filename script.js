@@ -29,5 +29,7 @@ judul.style.textAlign = 'center'
 judul.setAttribute('name', 'judul')
 
 
+
 const sec = document.querySelector('#r')
 sec.innerHTML = '<div><ul><li>yogi</li><li>nugraha</li><li>alcantara</li></ul></div>'
+
