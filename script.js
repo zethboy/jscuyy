@@ -27,6 +27,7 @@ judul.style.backgroundColor = 'Orange'
 judul.style.fontSize = '60px'
 judul.style.textAlign = 'center'
 judul.setAttribute('name', 'judul')
+judul.setAttribute('class', 'dul')
 
 
 
