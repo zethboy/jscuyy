@@ -17,3 +17,10 @@ liBaru.appendChild(textLiBaru)
 const sectionB = document.querySelector('section#b ul')
 const liLok = sectionB.querySelector('li:nth-child(2)')
 sectionB.insertBefore(liBaru, liLok)
+
+
+// remove link ig
+
+const link = document.getElementsByTagName('a')[0]
+
+sectionA.removeChild(link)
