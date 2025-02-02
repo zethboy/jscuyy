@@ -9,3 +9,8 @@ function ubahwarna() {
 }
 p2.onclick = ubahwarna
 
+
+const p4 = document.querySelector('.p4')
+p4.addEventListener('click', function(){
+  alert('okee')
+})
