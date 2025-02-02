@@ -10,7 +10,11 @@ function ubahwarna() {
 p2.onclick = ubahwarna
 
 
-const p4 = document.querySelector('.p4')
+const p4 = document.querySelector('section#b p')
 p4.addEventListener('click', function(){
-  alert('okee')
+  const ul = document.querySelector('section#b ul')
+  const liBaru = document.createElement('li')
+  const textLi = document.createTextNode('item baru')
+  liBaru.appendChild(textLi)
+  ul.appendChild(liBaru)
 })
