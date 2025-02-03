@@ -18,3 +18,9 @@ p4.addEventListener('click', function(){
   liBaru.appendChild(textLi)
   ul.appendChild(liBaru)
 })
+
+const p1 = document.querySelector('.p1')
+function ubahwarna1(){
+  p1.style.color = 'pink'
+}
+p1.onclick = ubahwarna1
