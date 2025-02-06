@@ -24,3 +24,4 @@ function ubahwarna1(){
   p1.style.color = 'pink'
 }
 p1.onclick = ubahwarna1
+
