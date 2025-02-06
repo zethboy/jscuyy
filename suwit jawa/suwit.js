@@ -7,12 +7,10 @@ function getPilKom(){
 }
 
 function getRules(comp, user) {
-  if (user == comp) return 'SERI!';
-  if (user == 'gajah') return (comp == 'orang') ? 'MENANG!' : 'KALAH!';
-  if (user == 'orang') return (comp == 'gajah') ? 'KALAH!' : 'MENANG!';
-  if (user == 'semut') return (comp == 'orang') ? 'KALAH!' : 'MENANG!';
-  
-  return 'Pilihan tidak valid!';
+  if (user == comp) return 'SARUA&nbsp;&nbsp;AJG';
+  if (user == 'gajah') return (comp == 'orang') ? 'ADUY MEUNANG!' : 'GEBLOH ELEH!';
+  if (user == 'orang') return (comp == 'gajah') ? 'GEBLOH ELEH!' : 'ADUY MEUNANG!';
+  if (user == 'semut') return (comp == 'orang') ? 'GEBLOH ELEH!' : 'ADUY MEUNANG!';
 }
 
 
@@ -24,7 +22,28 @@ pGajah.addEventListener('click', function(){
   const pilkom = getPilKom()
   const pilPlay = pGajah.className
   const hasil = getRules(pilkom, pilPlay)
-  console.log('komputer = ' + pilkom)
-  console.log('player = ' + pilPlay)
-  console.log('hasil = ' + hasil)
+  const imgComp = document.querySelector('.img-komputer')
+  imgComp.setAttribute('src', './bahan/' + pilkom + '.png')
+  const info = document.querySelector('.info')
+  info.innerHTML = hasil
+  
+})
+pSemut.addEventListener('click', function(){
+  const pilkom = getPilKom()
+  const pilPlay = pSemut.className
+  const hasil = getRules(pilkom, pilPlay)
+  const imgComp = document.querySelector('.img-komputer')
+  imgComp.setAttribute('src', './bahan/' + pilkom + '.png')
+  const info = document.querySelector('.info')
+  info.innerHTML = hasil
+})
+pOrang.addEventListener('click', function(){
+  const pilkom = getPilKom()
+  const pilPlay = pOrang.className
+  const hasil = getRules(pilkom, pilPlay)
+  const imgComp = document.querySelector('.img-komputer')
+  imgComp.setAttribute('src', './bahan/' + pilkom + '.png')
+  const info = document.querySelector('.info')
+  info.innerHTML = hasil
+  
 })
