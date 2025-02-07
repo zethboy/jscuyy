@@ -5,7 +5,7 @@ function ubahwarna3() {
 
 const p2 = document.querySelector('.p2')
 function ubahwarna() {
-  p2.style.backgroundColor = 'yellow' 
+  p2.style.backgroundColor = 'Green' 
 }
 p2.onclick = ubahwarna
 
