@@ -8,9 +8,15 @@
 
 const hilang = document.querySelectorAll('.close')
 
-for (let i = 0; i < hilang.length; i++){
-  hilang[i].addEventListener('click', function(e){
-    // hilang[i].parentElement.style.display = 'none'
+// for (let i = 0; i < hilang.length; i++){
+//   hilang[i].addEventListener('click', function(e){
+//     // hilang[i].parentElement.style.display = 'none'
+//     e.target.parentElement.style.display = 'none'
+//   })
+// }
+
+hilang.forEach(function(el){
+  el.addEventListener('click', function(e){
     e.target.parentElement.style.display = 'none'
   })
-}
+})
