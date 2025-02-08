@@ -20,3 +20,11 @@ hilang.forEach(function(el){
     e.target.parentElement.style.display = 'none'
   })
 })
+
+const nama = document.querySelectorAll('.nama')
+for(let i = 0; i < nama.length; i++){
+nama[i].addEventListener('click', function(na){
+  
+  na.target.nextElementSibling.style.color = 'red'
+})
+}
