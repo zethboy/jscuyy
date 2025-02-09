@@ -17,11 +17,12 @@ const hilang = document.querySelectorAll('.close')
 
 hilang.forEach(function(el){
   el.addEventListener('click', function(e){
-    e.target.parentElement.parentElement.style.display = 'none'
+    e.target.parentElement.style.display = 'none'
+    e.preventDefault()
   })
 })
 
-const nama = document.querySelector('.nama')
+// const nama = document.querySelector('.nama')
 // for(let i = 0; i < nama.length; i++){
 // nama[i].addEventListener('click', function(na){
   
