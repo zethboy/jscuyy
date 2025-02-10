@@ -19,6 +19,7 @@ hilang.forEach(function(el){
   el.addEventListener('click', function(e){
     e.target.parentElement.style.display = 'none'
     e.preventDefault()
+    e.stopPropagation()
   })
 })
 
@@ -30,3 +31,9 @@ hilang.forEach(function(el){
 // })
 // }
 // console.log(nama.parentElement.parentElement);
+
+const cards = document.querySelectorAll('.card')
+cards.forEach(function(card){
+card.addEventListener('click', function(c){
+  alert('ok')
+})})
