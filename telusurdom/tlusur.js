@@ -43,7 +43,7 @@ const container = document.querySelector('.container')
 container.addEventListener('click', function(e){
   console.log(e.target)
   if(e.target.className == 'close'){
-    e.target.parentElement.style.display = 'none';
+    e.target.parentElement.style.backgroundColor = 'red';
     e.preventDefault()
   }
 })
