@@ -21,7 +21,6 @@
 
 // FUNGSI DEKLARASI
 
-
 function mahasiswa(nama, energy){
   let mahasiswa = {};
   mahasiswa.nama = nama
@@ -36,5 +35,17 @@ function mahasiswa(nama, energy){
 let yogi = mahasiswa('Yogi', 14)
 
 // CONTRUCTION FUNCTION
+
+function mahasiswa(nama, energy){
+  this.nama = nama
+  this.energy = energy
+
+  this.makan = function (porsi){
+    this.energy += porsi
+    console.log(`halo ${this.nama}, selamat makan`)
+  }
+}
+
+let allea = new mahasiswa('allea', 12)
 
 // OBJEK CREATE
