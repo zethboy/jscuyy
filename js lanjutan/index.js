@@ -47,5 +47,6 @@ function mahasiswa(nama, energy){
 }
 
 let allea = new mahasiswa('allea', 12)
+let respa = new mahasiswa('respa', 14)
 
 // OBJEK CREATE
