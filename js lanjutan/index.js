@@ -25,6 +25,11 @@ const methodMhs = {
   makan : function (porsi){
     this.energy += porsi
     console.log(`halo ${this.nama}, selamat makan`)
+  },
+
+  tidur : function(jam){
+    this.energy += jam * 2
+    console.log(`halo ${this.nama}, baru bangun nihhh`)
   }
 }
 
@@ -33,6 +38,7 @@ function mahasiswa(nama, energy){
   mahasiswa.nama = nama
   mahasiswa.energy = energy
   mahasiswa.makan = methodMhs.makan
+  mahasiswa.tidur = methodMhs.tidur
 
  
   return mahasiswa
