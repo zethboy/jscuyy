@@ -44,6 +44,7 @@ function mahasiswa(nama, energy){
   return mahasiswa
 }
 let yogi = mahasiswa('Yogi', 14)
+let ayaa = mahasiswa('ayaa', 19)
 
 // CONTRUCTION FUNCTION
 
